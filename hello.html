@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset=utf-8>
+<title>Hello Java-Buddy!</title>
+  
+<script>
+ 
+function updateHello(user){
+  document.getElementById("helloprompt").innerHTML="Hello: " + user;
+}
+  
+function clearHello(user){
+  document.getElementById("helloprompt").innerHTML="Hello <a href='http://java-buddy.blogspot.com/'>Java-Buddy</a>";
+}
+ 
+function callJavaFX(){
+    var msg = document.getElementById("textto").value;
+    app.callFromJavascript(msg);
+}
+</script>
+  
+</head>
+<body>
+<p id="helloprompt">Hello <a href="http://java-buddy.blogspot.com/">Java-Buddy</a></p>
+<p><textarea id="textto"> </textarea></p>
+<p><input type="button" value="Click to send message to Javascript" onclick="callJavaFX()"></p>
+</body>
+</html>
